@@ -39,6 +39,5 @@
   (let [handler (if dev?
                   (reload/wrap-reload (site #'all-routes)) ;; only reload when dev
                   (site all-routes))]
-    (run-server handler {:port 8080}))
-  (println "running server on port 8080...")
-  (reset! server (run-server (site #'all-routes) {:port 8080})))
+    (println "running server on port 8080...")
+    (reset! server (run-server handler {:port 8080}))))

@@ -8,7 +8,8 @@
                  [compojure "1.3.1"]
                  [ring/ring-core "1.3.2"]
                  [ring/ring-devel "1.3.2"]
-                 [http-kit "2.1.18"]]
+                 [http-kit "2.1.18"]
+                 [cheshire "5.4.0"]]
   :main ^:skip-aot soundfetch.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
